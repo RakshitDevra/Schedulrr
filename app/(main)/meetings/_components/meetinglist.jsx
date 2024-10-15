@@ -40,7 +40,7 @@ const MeetingList = ({meetings,type}) => {
     {type === "upcoming" && (
             <CardFooter className="flex justify-between">
               <CancelMeetingButton meetingId={meeting.id} />
-            </CardFooter>
+            </CardFooter>)}
 </Card>
             )
         })}
