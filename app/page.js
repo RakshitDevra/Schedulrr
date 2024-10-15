@@ -7,7 +7,15 @@ import { Calendar,Clock ,LinkIcon } from 'lucide-react'
 import { Card,CardContent,CardHeader,CardTitle} from "@/components/ui/card"
 import Testimonials from '@/components/testimonials'
 
-
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: 'MySchedulrr',
+  description:
+    'Event Scheduling Application',
+  verification: {
+    google: '9emysP2ffRNhYGdwtSZuDg2n1U7feKQJ2YnwRM',
+  },
+};
 const page = () => {
   const features = [
     {
