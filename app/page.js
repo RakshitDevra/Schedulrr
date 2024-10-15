@@ -9,7 +9,6 @@ import Testimonials from '@/components/testimonials'
 
 
 export  async function generateMetadata({params}) {
-  
   return {
   title:`MySchedulrr`,
   description:`Event Scheduling App`,
@@ -18,6 +17,7 @@ export  async function generateMetadata({params}) {
   },
 
   }
+}
 const page = () => {
   const features = [
     {
