@@ -37,9 +37,10 @@ const MeetingList = ({meetings,type}) => {
         <a href={meeting.meetLink} target='_blank' rel="nooopener noreferrer" className='text-blue-500 hover:underline'>Join Meeting</a>
      </div>)}
      </CardContent>
-    <CardFooter>
-    <CancelMeetingButton meetingId={meeting.id} />
-  </CardFooter>
+    {type === "upcoming" && (
+            <CardFooter className="flex justify-between">
+              <CancelMeetingButton meetingId={meeting.id} />
+            </CardFooter>
 </Card>
             )
         })}
