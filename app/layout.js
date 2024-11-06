@@ -1,5 +1,5 @@
 import {Inter} from "next/font/google"
-
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider} from '@clerk/nextjs'
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
       <Header />
       <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">{children}</main>
         <CreateEventDrawer />
+        <Analytics />
       </body>
       </ClerkProvider>
     </html>
