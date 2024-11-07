@@ -55,7 +55,7 @@ const handleCardClick=(e)=>{
     
     </CardHeader>
     <CardContent>
-      <p>{event.description.substring(0,event.description.indexOf("."))}</p>
+    <p>{event.description.split(".")[0]}</p>
     </CardContent>
     {!isPublic &&<CardFooter className="flex gap-2">
 
