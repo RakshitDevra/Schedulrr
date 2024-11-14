@@ -14,6 +14,10 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
+      <head>
+        {/* Add Google verification meta tag here */}
+        <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+      </head>
     <ClerkProvider  publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <body
         className={`inter.className()`}
